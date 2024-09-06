@@ -132,7 +132,6 @@ class IP:
         next_hop são fornecidos no formato 'x.y.z.w'.
         """
         self.tabela_roteamento = tabela
-        #print(self.tabela_roteamento)
 
     def registrar_recebedor(self, callback):
         """
