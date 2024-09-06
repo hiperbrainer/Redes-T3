@@ -93,7 +93,6 @@ class IP:
         usa a correspondência com o prefixo mais longo (maior máscara).
         Retorna o endereço IP do próximo salto como uma string ou None se não houver correspondência.
         """
-        #print('dest addr = ', dest_addr)
         best_match = None
         for enter in self.tabela_roteamento:
             cidr, next_hop = enter
@@ -133,7 +132,7 @@ class IP:
         next_hop são fornecidos no formato 'x.y.z.w'.
         """
         self.tabela_roteamento = tabela
-        print(self.tabela_roteamento)
+        #print(self.tabela_roteamento)
 
     def registrar_recebedor(self, callback):
         """
